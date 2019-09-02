@@ -27,12 +27,26 @@ public class _00_ArrayCheatSheet {
 			num[i]=r.nextInt(51);
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		System.out.println(num[0]);
+		int low=50;
+		for(int i=0; i<50; i++) {
+			if(num[i]<low) {
+				low=num[i];
+			}	
+		}
+		System.out.println(low);
 		//9 print the entire array to see if step 8 was correct
 		for(int i=0; i<50; i++) {
-		System.out.println(num[i]);
+			System.out.println(num[i]);
 		}
 		//10. print the largest number in the array.
-		System.out.println(num[50]);
+		int high=0;
+		for(int i=0; i<50; i++) {
+			if(num[i]>high) {
+				high=num[i];
+				
+			}
+			
+		}
+		System.out.println(high);
 	}
 }
